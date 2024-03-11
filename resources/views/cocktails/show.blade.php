@@ -10,6 +10,9 @@
                     alt="{{ $cocktail->name }}">
             </div>
             <div class="col-md-6">
+                <p><strong>Category:</strong> {{ $cocktail->category }}</p>
+                <p><strong>Type:</strong> {{ $cocktail->alcoholic }}</p>
+                <p><strong>Glass:</strong> {{ $cocktail->glass }}</p>
                 <h3>Ingredients</h3>
                 <ul>
                     @foreach ($cocktail->ingredients as $ingredient)

@@ -9,6 +9,9 @@ class Cocktail
     public $thumbnail;
     public $instructions;
     public $ingredients = [];
+    public $alcoholic;
+    public $glass;
+    public $category;
 
     public function __construct($data)
     {
@@ -16,6 +19,9 @@ class Cocktail
         $this->name = $data['strDrink'] ?? '';
         $this->thumbnail = $data['strDrinkThumb'] ?? '';
         $this->instructions = $data['strInstructions'] ?? '';
+        $this->alcoholic = $data['strAlcoholic'] ?? '';
+        $this->glass = $data['strGlass'] ?? '';
+        $this->category = $data['strCategory'] ?? '';
 
         // Extract ingredients and measures
         for ($i = 1; $i <= 15; $i++) {
