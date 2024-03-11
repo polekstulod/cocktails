@@ -15,7 +15,7 @@ class CocktailController extends Controller
 
     public function index()
     {
-        $cocktails = $this->cocktailService->getAllCocktails();
+        $cocktails = $this->cocktailService->getRandomCocktails();
 
         return view('cocktails.index', compact('cocktails'));
     }

@@ -15,7 +15,7 @@ class CocktailService
         $this->client = new Client();
     }
 
-    public function getAllCocktails(): array
+    public function getRandomCocktails(): array
     {
         // Create an array of all letters in the alphabet
         $letters = range('a', 'z');
