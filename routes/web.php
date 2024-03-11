@@ -15,7 +15,7 @@ use App\Http\Controllers\CocktailController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect()->route('cocktails.index');
 });
 
 Route::get('/cocktails', [CocktailController::class, 'index'])->name('cocktails.index');
